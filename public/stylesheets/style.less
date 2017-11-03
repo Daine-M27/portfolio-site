@@ -68,6 +68,13 @@ h2 span {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) and (min-width: 1px){
+  .row{
+    width: 97vw;
+    margin: 0 auto;
+  }
+}
+
 
 .bbs{
   padding-bottom: 6vh;
@@ -108,7 +115,8 @@ h2 span {
 
 .navbar-default{
   background-color: white;
-  border-color: @dark-gray;
+  border-color: @lighter-gray;
+  box-shadow: @med-gray 0px 1px 24px;
 
 }
 .navbar-default .navbar-nav>li>a{
@@ -136,13 +144,37 @@ li.divider{
 
 //----- start header section -----//
 
+
+
+
 #header a {
   color: white;
+
+  span {
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
 
 }
 #header a:hover {
   text-decoration: none;
   color:@light-blue;
+
+  span{
+    border-color: @light-blue;
+  }
 }
 
 .header-text{
@@ -172,6 +204,10 @@ li.divider{
 
 
 
+}
+
+ul.link-icons {
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 600px) and (min-width: 1px){
@@ -213,6 +249,7 @@ li.divider{
   background-size: cover !important;
 
 }
+
 
 
 //----- end header text -----//
@@ -602,6 +639,14 @@ ul.highlights {
   color: @light-blue;
   font-size: 13px;
 }
+
+@media screen and (max-width: 600px) and (min-width: 1px) {
+  #form-row {
+    margin: 0;
+  }
+}
+
+
 
 //----- end contact section -----//
 
