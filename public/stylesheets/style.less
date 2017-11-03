@@ -151,6 +151,8 @@ li.divider{
   margin: 0 auto;
   width: 65%;
   padding-bottom: 30px;
+
+
   
   .name{
     font-size: 6vw;
@@ -165,8 +167,40 @@ li.divider{
     font-size: 18px;
     text-shadow: 0px 1px 3px black;
 
+
   }
 
+
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 1px){
+  .header-text{
+    padding-top: 35vh;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 65%;
+    padding-bottom: 30px;
+
+
+
+    .name{
+      font-size: 30px;
+      color: white;
+      text-shadow: 0px 2px 3px black;
+    }
+
+
+    p {
+      margin: 0 10vw 0 10vw;
+      color: @light-gray;
+      font-family: @crimsonFont;
+      font-size: 14px;
+      text-shadow: 0px 1px 3px black;
+
+
+    }
+  }
 }
 
 .full-screen{
@@ -412,6 +446,7 @@ ul.highlights {
   height:auto;
   padding: 0px 14px;
   border: none;
+  margin-bottom: 25px;
 
   a img {
     -webkit-border-radius: 3px;
@@ -429,12 +464,19 @@ ul.highlights {
   }
 
   a img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+    box-shadow: @med-gray 6px 12px 12px;
+
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
   }
+}
+
+.thumbnail:hover{
+  z-index: 1;
+
 }
 
 //----- end images thumbnails -----//
