@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Daine Marshall - Web Developer
+  meta(name='description', content='Daine Marshall - Web Developer')
+  meta(name='author', content='Daine Marshall')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet")
+  link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  link(rel='stylesheet/css', type='text/css', href='../stylesheets/normalize.css')
+  link(rel='stylesheet/less', type='text/css', href='../stylesheets/style.less')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Libre+Baskerville', rel='stylesheet')
+
+
+
+  //if lt IE 9
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js')
+
+  link(rel='shortcut icon', href='favicon.png')
+  body
+    include partials/nav
+
+    block content
+
+    include partials/footer
