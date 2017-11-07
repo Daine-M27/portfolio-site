@@ -2,12 +2,13 @@
 @light-gray: #DCDCDD;
 @med-gray: #adb1b2;
 @dark-gray: #46494c;
+@darker-gray: #323437;
 @light-blue: #00a8fc;
 @dark-blue: #0088ce;
 
 
 @openSansFont: 'Open Sans', sans-serif;
-@crimsonFont: 'Libre Baskerville', serif;
+@libreBaskervilleFont: 'Libre Baskerville', serif;
 
 
 .container-fluid {
@@ -20,7 +21,7 @@ body {
   font-family: @openSansFont;
   font-size: 14px;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 
@@ -127,6 +128,7 @@ h2 span {
   color: @light-blue;
 }
 
+// divider line in pull down menu
 li.divider{
   padding:0px ;
 
@@ -195,7 +197,7 @@ li.divider{
   p {
     margin: 0 10vw 0 10vw;
     color: @light-gray;
-    font-family: @crimsonFont;
+    font-family: @libreBaskervilleFont;
     font-size: 18px;
     text-shadow: 0px 1px 3px black;
 
@@ -230,7 +232,7 @@ ul.link-icons {
     p {
       margin: 0 10vw 0 10vw;
       color: @light-gray;
-      font-family: @crimsonFont;
+      font-family: @libreBaskervilleFont;
       font-size: 16px;
       text-shadow: 0px 1px 3px black;
 
@@ -278,6 +280,22 @@ ul.link-icons {
   }
 }
 
+.profile-pic{
+  margin-top: 27px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  img{
+    display: block;
+    height:100%;
+    margin: auto;
+    position: absolute;
+    left: -50px;
+  }
+}
 
 a.button{
 
@@ -305,12 +323,12 @@ a.button:hover{
     padding-bottom:6vh;
     background-color: @dark-gray;
     color: white;
-    text-shadow: 0px 2px black;
+    text-shadow: 0px 1px @darker-gray;
 
     p {
       color: @light-gray;
       font-family: @openSansFont;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
@@ -480,21 +498,7 @@ ul.highlights {
 
 //----- images and thumbnails -----//
 
-.profile-pic{
-  position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  overflow: hidden;
 
-  img{
-    display: block;
-    height:100%;
-    margin: auto;
-    position: absolute;
-    left: -50px;
-  }
-}
 
 
 .thumbnail {
