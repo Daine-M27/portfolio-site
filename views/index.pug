@@ -54,40 +54,110 @@ block content
             .row.row-main
                 .col-md-3
                     h2
-                        span Work
-                //- .col-md-1
-                .col-md-9
+                        span Work                
+                //----------------------------------------------------- The Light Source ----------------------------------------------------- //
+                .col-md-9.borderBottom                   
+                    h3 The Light Source
+                    p.highlights
+                        | Software Developer / IT Support
+                        span  •
+                        em  Aug 2018 - Current
+                        
+                    //- .expand
+                    //-     p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
+                    #tlsText.collapse.in
+                        p
+                            | At The Light Source, I am responsible for developing internal and external tools that help the business better accomplish its goals.  I also maintain the company website by adding and modifiying content and addressing issues when they arrise.  A wide variety of technologies is required to make all of this happen and I develope and contribute to applications written in multiple languages including C#, Python, and JavaScript.
+
+                        p 
+                            | My projects include developing a way to automate mechanical drawings by using SVG data to create each drawing based on a users selected inputs.  A drawing that once took days or weeks is now produced immediatly.  I have also created a hardware / software solution to test circuit boards that are produced on the Light Sources pick and place machine.    
+                        
+                        P 
+                            | My secondary duty is to provide technical support to employees and maintain the buildings IT infrastructure.  Automated manufacturing machinery is integrated into the company network which allows engineers instant access to machine programming.  
+            .row
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow.up(data-toggle='collapse' data-target="#tlsText" onclick="toggleUpDown()")
+
+            
+            .row
+                .col-md-3                
+                //----------------------------------------------------- Red Ventures ----------------------------------------------------- //
+                .col-md-9.borderBottom                   
+                    h3 Red Ventures
+                    p.highlights
+                        | QA Engineer
+                        span  •
+                        em  January 2018 - August 2018
+                        
+                    //- .expand
+                    //-     p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
+                    #rvText.collapse
+                        p
+                            | While working for Red Ventures, I integrated myself within internal business units to develope testing strategies for their unique products and requirements.  Once the goals for testing were documented, I wrote software testing libraries that verified web content, user interactions, and style guidelines.    
+                        P 
+                            | The QA team members where assigned JIRA tasks and worked in sprints with weekly stand-ups.  Each project was controlled through continuous integration and tests were run daily with results being delivered to business leaders and engineers. 
+            .row
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#rvText" onclick="toggleUpDown()")
+
+            
+            .row
+                .col-md-3                
+                //----------------------------------------------------- TekUAV ----------------------------------------------------- //
+                .col-md-9.borderBottom                   
                     h3 TekUAV
                     p.highlights
                         | Business Owner
                         span  •
                         em  June 2015 - December 2017
-                    p
-                        | I created TekUAV to provide aerial services utilizing drone technology for industries like real estate marketing,
-                        | surveying, mapping, and construction monitoring.  While at TekUAV I learned about web development and created the
-                        | company web site using WordPress.
-                    P I also carefully crafted all of the promotional material and designed logos and
-                        |  graphics to establish an identity for the company.  This is where I found my real passion for designing websites, by
-                        | creating media for both TekUAV and its customers.
-            .row.pbl.bbs
-                .col-md-2
-                .col-md-1
-                .col-md-9
+                        
+                    //- .expand
+                    //-     p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
+                    #tekuavText.collapse
+                        p
+                            | I created TekUAV to provide aerial services utilizing drone technology for industries like real estate marketing,
+                            | surveying, mapping, and construction monitoring.  While at TekUAV I learned about web development and created the
+                            | company web site using WordPress.
+                        P I also carefully crafted all of the promotional material and designed logos and
+                            |  graphics to establish an identity for the company.  This is where I found my real passion for designing websites, by
+                            | creating media for both TekUAV and its customers.
+            .row
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
+            
+            .row
+                .col-md-3
+                //----------------------------------------------------- Event Capture Systems ----------------------------------------------------- //
+                .col-md-9.borderBottom
                     h3 Event Capture Systems
                     p.highlights
-                        | Product/Service Manager
+                        | Product / Service Manager
                         span  •
                         em  April 2006 - July 2015
-                    p
-                        | At Event Capture Systems I was responsible for thousands of remote servers inside our high speed camera systems all over
-                        | the world. As the Product Manager I introduced
-                        | Agile development ideas to our team and helped standardize our development processes.  Planning new features and bug fix priorities
-                        | were accomplished with SCRUM practices like daily stand ups.  I also played an integral part in evaluating new technologies
-                        | and hardware specifications to ensure they met our performance requirements.
-                    p When I wasn't doing all that stuff, I built and maintained all of the internal systems for our business which included an
-                        |  Asterisk PBX phone system, FreeNAS file server with Egnyte cloud backups, email server,  ClearOS firewall, CiscoVPN, Ubiquiti WiFi, and I even
-                        | installed and terminated every foot of Cat-5e in the building.
-
+                    #ecsText.collapse
+                        p
+                            | At Event Capture Systems I was responsible for thousands of remote servers inside our high speed camera systems all over
+                            | the world. As the Product Manager I introduced
+                            | Agile development ideas to our team and helped standardize our development processes.  Planning new features and bug fix priorities
+                            | were accomplished with SCRUM practices like daily stand ups.  I also played an integral part in evaluating new technologies
+                            | and hardware specifications to ensure they met our performance requirements.
+                        p When I wasn't doing all that stuff, I built and maintained all of the internal systems for our business which included an
+                            |  Asterisk PBX phone system, FreeNAS file server with Egnyte cloud backups, email server,  ClearOS firewall, CiscoVPN, Ubiquiti WiFi, and I even
+                            | installed and terminated every foot of Cat-5e in the building.
+            .row
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#ecsText" onclick="toggleUpDown()")
+            .row.pbl.bbs
+                .col-md-3
+                .col-md-9
 
         div#education
             .row.row-main
@@ -124,10 +194,9 @@ block content
         
         div.bg-light-gray#calmStats
             .row.row-main.bbs
-                .col-md-2
+                .col-md-3
                     h2
-                        span Portfolio
-                .col-md-1
+                        span Portfolio                
                 .col-md-9
                     h3 Calm Stats
                     p.highlights
@@ -149,25 +218,16 @@ block content
                                 li Separately Hosted at Netlify, Heroku, and Mlab
                                 li Bootstrap, FlatUI, FontAwesome, and GoogleFonts
                                 li Fully Responsive
-                            h4 Live Site
-                            ul.highlights
-                                li
-                                    a(href="https://calmstats.com") www.CalmStats.com
-                            h4 Resources
-                            ul.highlights
-                                li
-                                    a(href="#") GitHub Front End,
-                                li
-                                    a(href="#") GitHub Back End
+
                         .col-md-8
                             img.work-views(src='../images/calmstatsMockUp.png', alt='computer tablet and phone views of application')
 
 
 
             .row.bbs.row-main#indigoPearl
-                .col-md-2
+                .col-md-3
                     h2
-                .col-md-1
+                
                 .col-md-9
                     h3 Indigo Pearl
                     p.highlights
@@ -191,14 +251,6 @@ block content
                                 li Fully Responsive
                                 li Custom Photography and Artwork
 
-                            h4 Live Site
-                            ul.highlights
-                                li
-                                    a(href="https://test-indigo.dainebramage.com") www.TheIndigoPearl.com
-                            h4 Resources
-                            ul.highlights
-                                li
-                                    a(href="https://github.com/Daine-M27/capstone2") GitHub
                         .col-md-8
                             img.work-views(src='../images/indigoPearlMockUp.png', alt='computer tablet and phone views of application')
 
@@ -231,28 +283,24 @@ block content
                                 li Mobile Friendly
                                 li Custom Photography and Design
 
-                            h4 Live Site
-                            ul.highlights
-                                li
-                                    a(href="https://carolinagymnasticsandcheer.com") www.CarolinaGymnasticsAndCheer.com
                         .col-md-8
                             img.work-views(src='../images/carolinaGymnasticsMockUp.png', alt='computer tablet and phone views of application')
 
 
 
         .row.row-main.pbl.bbs
-            .col-md-2
+            .col-md-3
                 h2
                     span Skills
-            .col-md-1
+            
             .col-md-9
                 .col-sm-12.col-md-6.bars
                     ul.skills
                         li
-                            em HTML 5
+                            em HTML
                             span.bar-expand.html5
                         li
-                            em CSS 3
+                            em CSS
                             span.bar-expand.css3
                         li
                             em JavaScript

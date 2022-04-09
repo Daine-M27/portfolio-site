@@ -94,7 +94,9 @@ h2 span {
   padding-bottom: 6vh;
 }
 
-
+.mb-10 {
+  margin-bottom: 10px;
+}
 
 
 
@@ -304,7 +306,7 @@ ul.link-icons {
   position: relative;
   width: 165px;
   height: 270px;
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
 
   img{
@@ -356,9 +358,48 @@ a.button:hover{
 
 
 
+//----- work start -------//
+.center {
+  text-align: center;
+}
+
+.borderBottom {
+  padding-bottom: 1vh;
+  border-bottom: @light-gray solid 1px;
+}
+
+.arrow {
+  margin-top: 25px;
+  border: solid @dark-gray;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: .50s ease-in-out;
+  
+  &:hover {
+    border: solid @light-blue;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+}
 
 
 
+.up {
+  
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: .50s ease-in-out;
+  
+}
+
+// .down {
+//   transform: rotate(45deg);
+//   -webkit-transform: rotate(45deg);
+// }
 
 
 

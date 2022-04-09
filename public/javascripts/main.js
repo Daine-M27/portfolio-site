@@ -18,5 +18,10 @@ $(document).ready(function(){
 
         }
     });
+
+    $("p.arrow").on('click', function(event) {
+        this.classList.toggle("up")
+    });
+
 });
 
