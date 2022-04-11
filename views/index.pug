@@ -6,7 +6,7 @@ block content
             .row.header-text.bbs
                 h1.name I'm Daine Marshall
                 p
-                    | A Charlotte, NC based full stack web developer, photographer, and artist who loves bringing ideas to life and helping people utilize new technologies to meet today's digital challenges.
+                    | A Charlotte, NC based full stack web developer and artist who loves bringing ideas to life and helping people utilize new technologies to meet today's digital challenges.
                 br
                 P Head on down to learn more
                     span
@@ -67,10 +67,10 @@ block content
                     //-     p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
                     #tlsText.collapse.in
                         p
-                            | At The Light Source, I am responsible for developing internal and external tools that help the business better accomplish its goals.  I also maintain the company website by adding and modifiying content and addressing issues when they arrise.  A wide variety of technologies is required to make all of this happen and I develope and contribute to applications written in multiple languages including C#, Python, and JavaScript.
+                            | At The Light Source, I am responsible for developing internal and external tools that help the business better accomplish its goals.  I also maintain the company website by adding and modifying content and addressing issues when they arise.  A wide variety of technologies are required to make all of this happen and I develop and contribute to applications written in multiple languages including C#, Python, and JavaScript.
 
                         p 
-                            | My projects include developing a way to automate mechanical drawings by using SVG data to create each drawing based on a users selected inputs.  A drawing that once took days or weeks is now produced immediatly.  I have also created a hardware / software solution to test circuit boards that are produced on the Light Sources pick and place machine.    
+                            | My projects include developing a way to automate mechanical drawings by using SVG data to create each drawing based on a users selected inputs.  A drawing that once took days or weeks is now produced  immediately.  I have also created a hardware / software solution to test circuit boards that are produced on the Light Sources pick and place machine.    
                         
                         P 
                             | My secondary duty is to provide technical support to employees and maintain the buildings IT infrastructure.  Automated manufacturing machinery is integrated into the company network which allows engineers instant access to machine programming.  
@@ -95,7 +95,7 @@ block content
                     //-     p.arrow(data-toggle='collapse' data-target="#tekuavText" onclick="toggleUpDown()")
                     #rvText.collapse
                         p
-                            | While working for Red Ventures, I integrated myself within internal business units to develope testing strategies for their unique products and requirements.  Once the goals for testing were documented, I wrote software testing libraries that verified web content, user interactions, and style guidelines.    
+                            | While working for Red Ventures, I integrated myself within internal business units to develop testing strategies for their unique products and requirements.  Once the goals for testing were documented, I wrote software testing libraries that verified web content, user interactions, and style guidelines.    
                         P 
                             | The QA team members where assigned JIRA tasks and worked in sprints with weekly stand-ups.  Each project was controlled through continuous integration and tests were run daily with results being delivered to business leaders and engineers. 
             .row
@@ -177,7 +177,7 @@ block content
                         | responsive mobile-friendly designs that are software tested and secured with user authentication.  Each project was tailored around
                         | industry best practices and standard development tools like git version control and GitHub with integrated testing and
                         | deployment.
-            .row.bbs
+            .row.pbl 
                 .col-md-2
                 .col-md-1
                 .col-md-9
@@ -192,100 +192,228 @@ block content
                         | firewall configuration, server building and repair, batch scripting, and wifi configuration and security.
         
         
-        div.bg-light-gray#calmStats
-            .row.row-main.bbs
+        div.bg-light-gray
+            //----------------------------------------- Light Source MegaBatten -------------------------------//
+            .row.row-main#megabatten
                 .col-md-3
                     h2
                         span Portfolio                
-                .col-md-9
+                .col-md-9.borderBottomDark
+                    h3 The Light Source - Drawing Configurator
+                    p.highlights
+                        em  August 2021 - February 2022
+                    #tlsMBText.collapse.in
+                        p
+                            | The MEGABATTEN configurator allows a customer to select their desired options, and produce a mechanical drawing instantly.  Each choice eliminates the following choices and options to ensure only valid configurations based on business rules.  
+                            
+                        p
+                            | A drawing is composed of reusable SVG components arranged into PUG mixins.  These components are modified and assembled as needed. Each dimension line is drawn in real-time as the drawing is being assembled. A custom bill of materials is generated, and customer selected options are marked on the drawing.  This process takes up to two weeks if done by hand.  
+
+                        p   
+                            | The project also includes a quote request form.  Once a customer has a submittal drawing in hand they can use the part number to request a quote directly on the website.  That information is passed directly to the sales department to streamline the process. 
+                            
+                        p
+                            | Each MEGABATTEN has the option for custom labels.  This part of the product historically held up production until a customer could provide the necessary information.  Now a custom label sheet can be generated and filled out by the customer on the site.  The possible label options are limited to only those available for the specific part number.
+                        
+                        p   
+                            | A separate application was developed to update the options on the website from data that exists on the company MRP software.  This is hosted inside the company firewall and run done daily. It is used to set all available choices and options from a single internal data source.
+
+                        p 
+                            | The styling is intended to match the existing website and provide a similar user experience at the request of the owners.  
+                        .col-md-12
+                            .col-md-4
+                                h4 Highlights
+                                ul.highlights
+                                    li MongoDB, Node, Express, PUG
+                                    li Cache-PUG-Templates
+                                    li Nodemailer
+                                    li HTML2PDF
+                                    li Heroku 
+                                    li Github repository deployment
+                            .col-md-4
+                                h4 Repositories
+                                ul.highlights   
+                                    li 
+                                        a(href="https://github.com/Daine-M27/PDP_Website") MEGABATTEN Configurator 
+                                    li 
+                                        a(href="https://github.com/Daine-M27/PDP_Database_Update") Database Update Utility
+                            .col-md-4 
+                                h4 Live Demo 
+                                ul.highlights 
+                                    li 
+                                        a(href="https://pdp-configurator.herokuapp.com/configurator") Configurator 
+                                    li 
+                                        a(href="https://pdp-configurator.herokuapp.com/quote") Quote 
+                                    li 
+                                        a(href="https://pdp-configurator.herokuapp.com/label") Custom Label 
+                                    li
+                                        a(href="https://pdp-configurator.herokuapp.com/drawing/6252fa3748a31ec648a057be") Drawing Example
+
+                            
+            .row#ledTester
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow.up(data-toggle='collapse' data-target="#tlsMBText" onclick="toggleUpDown()")
+
+
+            //----------------------------------------- Light Source LED Tester -------------------------------//
+            .row
+                .col-md-3
+                                    
+                .col-md-9.borderBottomDark
+                    h3 The Light Source - Led Board Tester
+                    p.highlights
+                        em  October 2020 - April 2021
+                    #tlsLEDText.collapse.in
+                        p
+                            | This software project allows a technician at The Light Source create, edit, and delete test routines for LED circuit boards.  Each set of test parameters is saved to a SQL database and retrieved when a test is to be run.  The software controls a laboratory power supply, four laboratory electrical meters, DMX/RDM protocol transmitter, and a Zebra label printer. A secondary application written in C# .Net allows the Node Application to interface with the power supply and electrical meters.
+
+                        p 
+                            | When a test is to be conducted the technician connects a board to the test unit and initiates a test from the software.  The test to be run determines what power level the power supply will provide, turns on the board and then checks the board firmware to confirm the proper type of board is connected.  Once the initial verification is completed the test parameters are requested from the SQL database and run one at a time.  As each set of parameters are run the software collects temperatures and current readings from the board and records the result in the database.
+                        
+                        p 
+                            | As each test runs a pass or fail criteria is checked against the readings before running the next test.  Once all tests have run the technician is presented with the results and a label is printed for the board.  An administration panel allows users to examine past results based on board ID, firmware version, board wattage, and date.  These results written to an excel file and downloaded to the PC.
+
+                        p   
+                            | A manual test page allows the technician to enter a single set of paramaters and run a simple test.  This also allows for the printing of labels without running a full series of tests.  
+                            
+                         
+                        .col-md-12
+                            .col-md-6
+                                h4 Highlights
+                                ul.highlights
+                                    li SQL, Node, Express, PUG
+                                    li C# .Net
+                                    li SCPI laboratory instruments communication
+                                    li SQL Stored procedures
+                                    li EZPL printer language
+                                    li Excel creation
+                                    li Com Port / Ethernet / USB
+                                   
+                            .col-md-6
+                                h4 Repositories
+                                ul.highlights   
+                                    li 
+                                        a(href="https://github.com/Daine-M27/testBedDashboard") LED Tester
+                                    li 
+                                        a(href="") Instrument Communication
+                            
+
+                            
+            .row#calmStats
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow.up(data-toggle='collapse' data-target="#tlsLEDText" onclick="toggleUpDown()")
+
+            //--------------------------------------------------Calm Stats---------------------------------------------------//
+
+            .row
+                .col-md-3               
+                .col-md-9.borderBottomDark
                     h3 Calm Stats
                     p.highlights
                         em  September 2017 - October 2017
-                    p
-                        | CalmStats is a responsive full-stack web app that allows users to chart the amount of time they spend in meditation each day.
-                        | It consists of a React frontend, a NodeJS and Express backend and a MongoDB server.  All three hosted on separate servers.
-                        br
-                    p
-                        | For Authentication I chose Auth0 to provide multiple login methods for users.  A user dashboard allows users to search for YouTube content,
-                        | and meditation session times are shown with ChartJS.
-                    .col-md-12
-                        .col-md-4
-                            h4 Highlights
-                            ul.highlights
-                                li MongoDB, Node, Express, React, and ChartJS
-                                li YouTube API Integration
-                                li Auth0 Authentication
-                                li Separately Hosted at Netlify, Heroku, and Mlab
-                                li Bootstrap, FlatUI, FontAwesome, and GoogleFonts
-                                li Fully Responsive
+                    #calmText.collapse
+                        p
+                            | CalmStats is a responsive full-stack web app that allows users to chart the amount of time they spend in meditation each day.
+                            | It consists of a React frontend, a NodeJS and Express backend and a MongoDB server.  All three hosted on separate servers.
+                            br
+                        p
+                            | For Authentication I chose Auth0 to provide multiple login methods for users.  A user dashboard allows users to search for YouTube content,
+                            | and meditation session times are shown with ChartJS.
+                        .col-md-12
+                            .col-md-4
+                                h4 Highlights
+                                ul.highlights
+                                    li MongoDB, Node, Express, React, and ChartJS
+                                    li YouTube API Integration
+                                    li Auth0 Authentication
+                                    li Separately Hosted at Netlify, Heroku, and Mlab
+                                    li Bootstrap, FlatUI, FontAwesome, and GoogleFonts
+                                    li Fully Responsive
 
-                        .col-md-8
-                            img.work-views(src='../images/calmstatsMockUp.png', alt='computer tablet and phone views of application')
+                            .col-md-8
+                                img.work-views(src='../images/calmstatsMockUp.png', alt='computer tablet and phone views of application')
+            .row#indigoPearl
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#calmText" onclick="toggleUpDown()")
 
 
-
-            .row.bbs.row-main#indigoPearl
+            //----------------------------------------- Indigo Pearl -------------------------------//
+            .row
                 .col-md-3
                     h2
                 
-                .col-md-9
+                .col-md-9.borderBottomDark
                     h3 Indigo Pearl
                     p.highlights
                         em  July 2017
-                    p
-                        | The Indigo Pearl was a web site built as my backend project while at Thinkful.  It is also a live client site developed for a local business.
-                        | It was built with NodeJS, Express, and MongoDB.  A custom gallery API was developed to allow the client to upload photos with titles and captions.
-                        | The database contains user profile information and authentication is required to access the gallery dashboard to upload and edit posts.
-                        br
-                    p
-                        | The site includes a stylized google map to match the site color scheme and working contact form.  I also created the custom home page graphic and photographed the store for the initial gallery.
-                    .col-md-12
-                        .col-md-4
-                            h4 Highlights
-                            ul.highlights
-                                li MongoDB, NodeJS, and Express
-                                li Custom Gallery API and Dashboard
-                                li Passport User Authentication
-                                li Hosted on DigitalOcean via Dokku
-                                li Bootstrap, FontAwesome, and GoogleFonts
-                                li Fully Responsive
-                                li Custom Photography and Artwork
+                    #ipText.collapse
+                        p
+                            | The Indigo Pearl was a web site built as my backend project while at Thinkful.  It is also a live client site developed for a local business.
+                            | It was built with NodeJS, Express, and MongoDB.  A custom gallery API was developed to allow the client to upload photos with titles and captions.
+                            | The database contains user profile information and authentication is required to access the gallery dashboard to upload and edit posts.
+                            br
+                        p
+                            | The site includes a stylized google map to match the site color scheme and working contact form.  I also created the custom home page graphic and photographed the store for the initial gallery.
+                        .col-md-12
+                            .col-md-4
+                                h4 Highlights
+                                ul.highlights
+                                    li MongoDB, NodeJS, and Express
+                                    li Custom Gallery API and Dashboard
+                                    li Passport User Authentication
+                                    li Hosted on DigitalOcean via Dokku
+                                    li Bootstrap, FontAwesome, and GoogleFonts
+                                    li Fully Responsive
+                                    li Custom Photography and Artwork
 
-                        .col-md-8
-                            img.work-views(src='../images/indigoPearlMockUp.png', alt='computer tablet and phone views of application')
+                            .col-md-8
+                                img.work-views(src='../images/indigoPearlMockUp.png', alt='computer tablet and phone views of application')
+            .row#carolinaGymnastics
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#ipText" onclick="toggleUpDown()")
 
 
-
-            .row.row-main.pbl#carolinaGymnastics
-                .col-md-2
-                    h2
-                .col-md-1
-                .col-md-9
+            .row
+                .col-md-3
+                .col-md-9.borderBottomDark
                     h3 Carolina Gymnastics
                     p.highlights
                         em  August 2017
-                    p
-                        |  Carolina Gymnastics and Cheer was developed for a client who owns a gymnastics training center in Stallings, NC.  We worked together to choose design aspects that were clean in appearance.
-                        |   A simple layout was selected to maximize the useful information for the clients busy customers who are interested in joining the gym.
-                        |   Future functionality to include payment portal, email campaign API integration and image gallery.
-                        br
-                    p
-                        |   This site was built with NodeJS, Express, and MongoDB.   Directed custom photography sessions on-site and produced final images.
-                    .col-md-12
-                        .col-md-4
-                            h4 Highlights
-                            ul.highlights
-                                li MongoDB, NodeJS, and Express
-                                li Responsive Table
-                                li PassportJS User Authentication
-                                li Hosted on DigitalOcean via Dokku
-                                li Bootstrap, FontAwesome, and GoogleFonts
-                                li Mobile Friendly
-                                li Custom Photography and Design
+                    #carGymText.collapse
+                        p
+                            |  Carolina Gymnastics and Cheer was developed for a client who owns a gymnastics training center in Stallings, NC.  We worked together to choose design aspects that were clean in appearance.
+                            |   A simple layout was selected to maximize the useful information for the clients busy customers who are interested in joining the gym.
+                            |   Future functionality to include payment portal, email campaign API integration and image gallery.
+                            br
+                        p
+                            |   This site was built with NodeJS, Express, and MongoDB.   Directed custom photography sessions on-site and produced final images.
+                        .col-md-12
+                            .col-md-4
+                                h4 Highlights
+                                ul.highlights
+                                    li MongoDB, NodeJS, and Express
+                                    li Responsive Table
+                                    li PassportJS User Authentication
+                                    li Hosted on DigitalOcean via Dokku
+                                    li Bootstrap, FontAwesome, and GoogleFonts
+                                    li Mobile Friendly
+                                    li Custom Photography and Design
 
-                        .col-md-8
-                            img.work-views(src='../images/carolinaGymnasticsMockUp.png', alt='computer tablet and phone views of application')
-
+                            .col-md-8
+                                img.work-views(src='../images/carolinaGymnasticsMockUp.png', alt='computer tablet and phone views of application')
+            .row.pbl
+                .col-md-3
+                .col-md-9 
+                    .center
+                        p.arrow(data-toggle='collapse' data-target="#carGymText" onclick="toggleUpDown()")
 
 
         .row.row-main.pbl.bbs
@@ -324,8 +452,8 @@ block content
                             em React
                             span.bar-expand.react
                         li
-                            em Docker
-                            span.bar-expand.docker
+                            em NextJS
+                            span.bar-expand.nextjs
                         li
                             em Jade/Pug
                             span.bar-expand.jade-pug
@@ -333,14 +461,14 @@ block content
                             em Git
                             span.bar-expand.git
                         li
-                            em Mocha/Chai
-                            span.bar-expand.mocha-chai
+                            em SQL
+                            span.bar-expand.sql
                         li
-                            em Photoshop
-                            span.bar-expand.photoshop
+                            em C#
+                            span.bar-expand.cSharp
                         li
-                            em AfterEffects
-                            span.bar-expand.aftereffects
+                            em .Net
+                            span.bar-expand.net
 
 
 
