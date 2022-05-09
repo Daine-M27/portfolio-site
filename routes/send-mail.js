@@ -18,7 +18,7 @@ router.post('/sendMail', function(req, res) {
 
 
     const mailOptions = {
-        to: process.env.MAIL_USER,
+        to: 'dainemarshall@gmail.com',
         from: process.env.MAIL_USER,
         subject: 'Contact Form | DaineMarshall.com',
         text: req.body.contactName + ' ' + req.body.contactEmail + ' ' + req.body.contactMessage
