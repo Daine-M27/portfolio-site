@@ -559,6 +559,13 @@ block content
                 .col-md-10
                     p.lead
                         | Send me a message, I would love the chance to speak with you in person.
+                    if emailStatus 
+                        script. 
+                            window.location.href = '#contact'
+                    if emailStatus === true 
+                        p.messageBox.success=emailMessage
+                    if emailStatus === false 
+                        p.messageBox.error=emailMessage
             .row#form-row
                 .col-md-8
                     // form
@@ -617,7 +624,10 @@ block content
                             a(href='https://www.linkedin.com/in/dainemarshall-271618') LinkedIn.com
                             |  as Daine Marshall
 
-
+    if anchor 
+        script. 
+            window.onload=window.location.hash = anchor
+            console.log(anchor)
 
 
 
