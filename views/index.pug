@@ -201,7 +201,7 @@ block content
                 .col-md-9.borderBottomDark
                     h3 The Light Source - Drawing Configurator
                     p.highlights
-                        em  August 2021 - February 2022
+                        em  
                     #tlsMBText.collapse.in
                         p
                             | The MEGABATTEN configurator allows a customer to select their desired options, and produce a mechanical drawing instantly.  Each choice eliminates the following choices and options to ensure only valid configurations based on business rules.  
@@ -210,7 +210,7 @@ block content
                             | A drawing is composed of reusable SVG components arranged into PUG mixins.  These components are modified and assembled as needed. Each dimension line is drawn in real-time as the drawing is being assembled. A custom bill of materials is generated, and customer selected options are marked on the drawing.  This process takes up to two weeks if done by hand.  
 
                         p   
-                            | The project also includes a quote request form.  Once a customer has a submittal drawing in hand they can use the part number to request a quote directly on the website.  That information is passed directly to the sales department to streamline the process. 
+                            | The project also includes a quote request form.  Once a customer has a submittal drawing in hand they can use the part number to request a quote directly on the website.  All information is emailed to the sales department to streamline the process. 
                             
                         p
                             | Each MEGABATTEN has the option for custom labels.  This part of the product historically held up production until a customer could provide the necessary information.  Now a custom label sheet can be generated and filled out by the customer on the site.  The possible label options are limited to only those available for the specific part number.
@@ -264,8 +264,8 @@ block content
                 .col-md-9.borderBottomDark
                     h3 The Light Source - Led Board Tester
                     p.highlights
-                        em  October 2020 - April 2021
-                    #tlsLEDText.collapse.in
+                        em  
+                    #tlsLEDText.collapse
                         p
                             | This software project allows a technician at The Light Source create, edit, and delete test routines for LED circuit boards.  Each set of test parameters is saved to a SQL database and retrieved when a test is to be run.  The software controls a laboratory power supply, four laboratory electrical meters, DMX/RDM protocol transmitter, and a Zebra label printer. A secondary application written in C# .Net allows the Node Application to interface with the power supply and electrical meters.
 
@@ -305,7 +305,7 @@ block content
                 .col-md-3
                 .col-md-9 
                     .center
-                        p.arrow.up(data-toggle='collapse' data-target="#tlsLEDText" onclick="toggleUpDown()")
+                        p.arrow(data-toggle='collapse' data-target="#tlsLEDText" onclick="toggleUpDown()")
 
             //--------------------------------------------------Calm Stats---------------------------------------------------//
 
@@ -314,7 +314,7 @@ block content
                 .col-md-9.borderBottomDark
                     h3 Calm Stats
                     p.highlights
-                        em  September 2017 - October 2017
+                        em  
                     #calmText.collapse
                         p
                             | CalmStats is a responsive full-stack web app that allows users to chart the amount of time they spend in meditation each day.
@@ -336,6 +336,13 @@ block content
 
                             .col-md-8
                                 img.work-views(src='../images/calmstatsMockUp.png', alt='computer tablet and phone views of application')
+                            .col-md-12
+                                h4 Repositories 
+                                ul.highlights 
+                                    li 
+                                        a(href="https://github.com/Daine-M27/calm-stats-client") Calm Stats Client
+                                    li
+                                        a(href="https://github.com/Daine-M27/express-server") Calm Stats Server
             .row#indigoPearl
                 .col-md-3
                 .col-md-9 
@@ -351,7 +358,7 @@ block content
                 .col-md-9.borderBottomDark
                     h3 Indigo Pearl
                     p.highlights
-                        em  July 2017
+                        em  
                     #ipText.collapse
                         p
                             | The Indigo Pearl was a web site built as my backend project while at Thinkful.  It is also a live client site developed for a local business.
@@ -374,6 +381,11 @@ block content
 
                             .col-md-8
                                 img.work-views(src='../images/indigoPearlMockUp.png', alt='computer tablet and phone views of application')
+                            .col-md-12
+                                h4 Repository 
+                                ul.highlights 
+                                    li 
+                                        a(href="https://github.com/Daine-M27/capstone2") The Indigo Pearl
             .row#carolinaGymnastics
                 .col-md-3
                 .col-md-9 
@@ -386,7 +398,7 @@ block content
                 .col-md-9.borderBottomDark
                     h3 Carolina Gymnastics
                     p.highlights
-                        em  August 2017
+                        em  
                     #carGymText.collapse
                         p
                             |  Carolina Gymnastics and Cheer was developed for a client who owns a gymnastics training center in Stallings, NC.  We worked together to choose design aspects that were clean in appearance.
