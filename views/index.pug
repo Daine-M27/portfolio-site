@@ -557,8 +557,9 @@ block content
                     h2
                         p Get In Touch.
                 .col-md-10
-                    p.lead
-                        | Send me a message, I would love the chance to speak with you in person.
+                    if !emailStatus
+                        p.lead
+                            | Send me a message, I would love the chance to speak with you in person.
                     if emailStatus 
                         script. 
                             window.location.href = '#contact'
@@ -575,20 +576,20 @@ block content
                                 label(for='contactName')
                                     | Name
                                     span.required *
-                                input#contactName(type='text', value='', size='35', name='contactName')
+                                input#contactName(type='text', value='', size='35', name='contactName' required)
                             div
                                 label(for='contactEmail')
                                     | Email
                                     span.required *
-                                input#contactEmail(type='text', value='', size='35', name='contactEmail')
+                                input#contactEmail(type='text', value='', size='35', name='contactEmail' required)
                             div
                                 label(for='contactSubject') Subject
-                                input#contactSubject(type='text', value='', size='35', name='contactSubject')
+                                input#contactSubject(type='text', value='', size='35', name='contactSubject' required)
                             div
                                 label(for='contactMessage')
                                     | Message
                                     span.required *
-                                textarea#contactMessage(cols='50', rows='15', name='contactMessage')
+                                textarea#contactMessage(cols='50', rows='15', name='contactMessage' required)
                             div
                                 button.submit Submit
                                 //span#image-loader

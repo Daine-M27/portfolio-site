@@ -27,7 +27,7 @@ router.post('/sendMail', function(req, res) {
     transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
             console.log('errors', err.message);
-            res.render('index', { title: 'Daine Marshall - Web Developer', emailStatus: false, emailMessage: 'Sorry there was an error sending message.  Please try again later.' });
+            res.render('index', { title: 'Daine Marshall - Web Developer', emailStatus: false, emailMessage: 'Sorry there was an error sending your message.  Please try again later.' });
         }
         res.render('index', { title: 'Daine Marshall - Web Developer', emailStatus: true, emailMessage: 'Email sent successfully, I look forward to speaking with you soon.' });
         //alert('Thank You ' + req.body.name + ', your message has been sent')
