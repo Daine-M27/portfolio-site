@@ -1,4 +1,5 @@
 extends layout
+include mixins/captchaSVG
 
 block content
     .container-fluid
@@ -557,15 +558,14 @@ block content
                     h2
                         p Get In Touch.
                 .col-md-10
-                    if !emailStatus
-                        p.lead
-                            | Send me a message, I would love the chance to speak with you in person.
-                    if emailStatus 
+                    p.lead
+                        | Send me a message, I would love the chance to speak with you in person.
+                    if emailStatus === 'false' || emailStatus === 'true'
                         script. 
                             window.location.href = '#contact'
-                    if emailStatus === true 
+                    if emailStatus === 'true' 
                         p.messageBox.success=emailMessage
-                    if emailStatus === false 
+                    if emailStatus === 'false' 
                         p.messageBox.error=emailMessage
             .row#form-row
                 .col-md-8
@@ -590,6 +590,19 @@ block content
                                     | Message
                                     span.required *
                                 textarea#contactMessage(cols='50', rows='15', name='contactMessage' required)
+                                                    
+                            //- .svgContainer
+                            //-     +captchaSVG(svg)
+                                
+                                    
+                            //- div
+                            //-     .svgContainer
+                            //-         +captchaSVG(svg)
+                            div    
+                                label(for='svg')
+                                    .svgContainer
+                                        +captchaSVG
+                                input#svg(type='text', value='', size='12', name='svg' required)
                             div
                                 button.submit Submit
                                 //span#image-loader
